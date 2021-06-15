@@ -10,10 +10,27 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var tableView: UITableView!
+    
+    var chat: Chat? {
+        didSet {
+            refreshUI()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    private func refreshUI() {
+        loadViewIfNeeded()
+        nameLabel.text = chat?.name
+        descriptionLabel.text = chat?.description
+        imageView.image = chat?.icon
     }
     
 

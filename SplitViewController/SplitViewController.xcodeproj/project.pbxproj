@@ -79,6 +79,8 @@
 		84CF583626789FB800454D53 /* SplitViewController */ = {
 			isa = PBXGroup;
 			children = (
+				84CF583726789FB800454D53 /* AppDelegate.swift */,
+				84CF583926789FB800454D53 /* SceneDelegate.swift */,
 				8468E17D2678C37600DBE373 /* Model */,
 				8468E17C2678C36200DBE373 /* Views */,
 				84CF58522678A24000454D53 /* Controllers */,
@@ -92,8 +94,6 @@
 		84CF584D2678A07A00454D53 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				84CF583726789FB800454D53 /* AppDelegate.swift */,
-				84CF583926789FB800454D53 /* SceneDelegate.swift */,
 				84CF584226789FC000454D53 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
