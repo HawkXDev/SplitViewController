@@ -10,6 +10,8 @@ import UIKit
 
 class MasterViewController: UITableViewController {
     
+    let chatsBrain = ChatsBrain()
+    
     let reuseIdentifier = "Cell"
 
     override func viewDidLoad() {
@@ -25,11 +27,13 @@ class MasterViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return chatsBrain.chats.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
+        let chat = chatsBrain.chats[indexPath.row]
+        cell.textLabel?.text = chat.name
         return cell
     }
 
