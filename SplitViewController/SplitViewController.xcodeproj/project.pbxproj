@@ -124,6 +124,8 @@
 			dependencies = (
 			);
 			name = SplitViewController;
+			packageProductDependencies = (
+			);
 			productName = SplitViewController;
 			productReference = 84CF583426789FB800454D53 /* SplitViewController.app */;
 			productType = "com.apple.product-type.application";
@@ -152,6 +154,8 @@
 				Base,
 			);
 			mainGroup = 84CF582B26789FB800454D53;
+			packageReferences = (
+			);
 			productRefGroup = 84CF583526789FB800454D53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

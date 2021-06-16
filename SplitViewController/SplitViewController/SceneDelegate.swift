@@ -20,6 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let firstChat = masterViewController.chatsBrain.chats.first
         detailViewController.chat = firstChat
+        
+        masterViewController.delegate = detailViewController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
